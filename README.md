@@ -24,7 +24,7 @@ termux-setup-storage
  
 **ROOTFS**
 
-Manjaro
+[Manjaro](https://github.com/manjaro-arm/rootfs)
 > Setup
 ```
 wget raw.githubusercontent.com/shiru-ri/playme/main/setupmanjaro.sh && bash setupmanjaro.sh
