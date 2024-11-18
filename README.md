@@ -29,6 +29,28 @@ termux-setup-storage
 ```
 wget raw.githubusercontent.com/shiru-ri/playme/main/setupmanjaro.sh && bash setupmanjaro.sh
 ```
+> Run
+```
+./manjaro.sh
+```
+```
+pacman-key --init
+```
+```
+pacman-key --populate
+```
+```
+pacman-key --updatedb
+```
+```
+pacman-key --refresh-keys
+```
+```
+pacman-mirrors --fasttrack
+```
+```
+pacman -Syyu
+```
 > Remove
 ```
 wget raw.githubusercontent.com/shiru-ri/playme/main/removemanjaro.sh && bash removemanjaro.sh
