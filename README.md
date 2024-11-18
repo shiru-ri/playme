@@ -23,6 +23,7 @@ termux-setup-storage
 > Allow
  
 **ROOTFS**
+
 Manjaro
 > Setup
 ```
