@@ -40,7 +40,7 @@ command+=" HOME=/root"
 command+=" PATH=/usr/local/sbin:/usr/local/bin:/bin:/usr/bin:/sbin:/usr/sbin:"
 command+=" TERM=\$TERM"
 command+=" LANG=en_GB.UTF-8"
-command+=" /bin/bash --login"
+command+=" /bin/sh --login"
 com="\$@"
 if [ -z "\$1" ];then
     exec \$command
