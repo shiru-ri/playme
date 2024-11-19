@@ -65,7 +65,7 @@ wget raw.githubusercontent.com/shiru-ri/playme/main/setupvoid.sh && bash setupvo
 ```
 ./void.sh
 ```
-Warning Void Linux buggy on vnc server. sometimes auto disconnect. use at your own risk. stop vnc & rerun again vnc
+Warning Void Linux buggy on vnc server. sometimes auto close. use at your own risk. stop vnc & rerun again vnc
 ```
 xbps-install -Su
 ```
@@ -88,11 +88,17 @@ vncpasswd
 nano /etc/X11/xinit/xinitrc
 ```
 > scroll to bottom. uncomment use # at line
+> 
 > twm &
+> 
 > xclock -geometry 50x50-1+1 &
+> 
 > xterm -geometry 80x50+494+51 &
+> 
 > xterm -geometry 80x20+494-0 &
+> 
 > exec xterm -geometry 80x66+0+0 -name login
+> 
 > add
 ```
 exec startxfce4
@@ -111,6 +117,7 @@ vncserver
 ```
 > connect with vnc viewer
 > localhost:1
+> 
 > disconnect vnc
 ```
 vncserver -kill :1
