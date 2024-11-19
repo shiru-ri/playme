@@ -26,6 +26,8 @@ termux-setup-storage
 
 [Manjaro](https://github.com/manjaro-arm/rootfs)
 > Setup
+>
+> copy in termux
 ```
 wget raw.githubusercontent.com/shiru-ri/playme/main/setupmanjaro.sh && bash setupmanjaro.sh
 ```
@@ -52,12 +54,18 @@ pacman-mirrors --fasttrack
 pacman -Syyu
 ```
 > Remove
+>
+> if you want remove copy in termux
 ```
 wget raw.githubusercontent.com/shiru-ri/playme/main/removemanjaro.sh && bash removemanjaro.sh
 ```
 
+
+
 Void
 > Musl C
+>
+> Setup
 ```
 wget raw.githubusercontent.com/shiru-ri/playme/main/setupvoid.sh && bash setupvoid.sh
 ```
@@ -124,9 +132,22 @@ vncserver
 ```
 vncserver -kill :1
 ```
+
 > Remove
 ```
 wget raw.githubusercontent.com/shiru-ri/playme/main/removevoid.sh && bash removevoid.sh
+```
+
+
+Alpine
+
+> Setup
+```
+wget raw.githubusercontent.com/shiru-ri/playme/main/setupalpine.sh && bash setupalpine.sh
+```
+> Remove
+```
+wget raw.githubusercontent.com/shiru-ri/playme/main/removealpine.sh && bash removealpine.sh
 ```
 # Reference
 [Here](https://github.com/Neo-Oli/termux-ubuntu)
