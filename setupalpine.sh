@@ -1,6 +1,6 @@
 #!/data/data/com.termux/usr/bin/bash
 
-tarball="alpine.tar.xz"
+tarball="alpine.tar.gz"
 
 echo "Download"
 wget "https://dl-cdn.alpinelinux.org/alpine/v3.20/releases/aarch64/alpine-minirootfs-3.20.3-aarch64.tar.gz" -O $tarball
