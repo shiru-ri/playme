@@ -88,16 +88,18 @@ vncpasswd
 nano /etc/X11/xinit/xinitrc
 ```
 > scroll to bottom. uncomment use # at line
+>
+> example
 > 
-> twm &
+> #twm &
 > 
-> xclock -geometry 50x50-1+1 &
+> #xclock -geometry 50x50-1+1 &
 > 
-> xterm -geometry 80x50+494+51 &
+> #xterm -geometry 80x50+494+51 &
 > 
-> xterm -geometry 80x20+494-0 &
+> #xterm -geometry 80x20+494-0 &
 > 
-> exec xterm -geometry 80x66+0+0 -name login
+> #exec xterm -geometry 80x66+0+0 -name login
 > 
 > add
 ```
@@ -121,6 +123,10 @@ vncserver
 > disconnect vnc
 ```
 vncserver -kill :1
+```
+> Remove
+```
+wget raw.githubusercontent.com/shiru-ri/playme/main/removevoid.sh && bash removevoid.sh
 ```
 # Reference
 [Here](https://github.com/Neo-Oli/termux-ubuntu)
