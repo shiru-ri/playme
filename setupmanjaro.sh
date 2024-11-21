@@ -39,7 +39,7 @@ command+=" /usr/bin/env -i"
 command+=" HOME=/root"
 command+=" PATH=/usr/local/sbin:/usr/local/bin:/bin:/usr/bin:/sbin:/usr/sbin:"
 command+=" TERM=\$TERM"
-command+=" LANG=C.UTF-8"
+command+=" LANG=en_GB.UTF-8"
 command+=" /bin/bash --login"
 com="\$@"
 if [ -z "\$1" ];then
