@@ -71,7 +71,7 @@ pacman -S tigervnc
 vncpasswd
 ```
 > enter password
-```
+> 
 > create file
 ```
 nano ~/.vnc/config
@@ -82,18 +82,19 @@ securitytypes=vncauth,tlsvnc
 geometry=1280x720
 localhost
 ```
-ctrl + o. ctrl x
-vncserver :1
-```
+> ctrl + o. ctrl x
+> 
+> vncserver :1
+> 
 > connect to vnc
 >
 > localhost:1
 >
-> in dekstop tap logout to disconnect vnc.
+> click logout to disconnect vnc.
 
 > Remove
 >
-> if you want to remove copy this on termux. not inside distro
+> if you want to remove. copy this command on termux. not inside distro
 ```
 wget raw.githubusercontent.com/shiru-ri/playme/main/removemanjaro.sh && bash removemanjaro.sh
 ```
@@ -111,7 +112,7 @@ wget raw.githubusercontent.com/shiru-ri/playme/main/setupvoid.sh && bash setupvo
 ```
 ./void.sh
 ```
-Warning Void sometimes auto close vnc when trying to setting program. use at your own risk.
+Warning Void sometimes auto close vnc. need investigation.
 ```
 xbps-install -Su
 ```
@@ -249,7 +250,6 @@ vncpasswd
 ```
 > enter password
 ```
-```
 nano ~/.vnc/config
 ```
 ```
@@ -259,9 +259,11 @@ geometry=1280x720
 localhost
 ```
 > ctrl +o. ctrl x
-vncserver :1
-```
+> 
+> vncserver :1
+> 
 > connect to vnc
+> 
 > localhost:1
 > 
 > logout to disconnect vnc
