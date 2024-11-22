@@ -15,7 +15,7 @@ pkg install x11-repo -y
 pkg update && pkg upgrade -y
 ```
 ```
-pkg install proot wget pulseaudio termux-api curl termux-x11 -y
+pkg install proot wget curl -y
 ```
 ```
 termux-setup-storage
@@ -53,6 +53,35 @@ pacman-mirrors --fasttrack
 ```
 pacman -Syyu
 ```
+```
+pacman -S nano wget sudo curl
+```
+> Install Xfce
+```
+pacman -S xfce4 xfce4-goodies
+```
+```
+pacman -S xorg
+```
+> Install VNC
+```
+pacman -S tigervnc
+```
+```
+vncpasswd
+```
+> enter password
+```
+vncserver :1
+```
+> connect to vnc
+>
+> localhost:1
+>
+> in dekstop tap logout to disconnect vnc. or use
+```
+vncserver -kill :1
+```
 > Remove
 >
 > if you want remove copy in termux
@@ -73,7 +102,7 @@ wget raw.githubusercontent.com/shiru-ri/playme/main/setupvoid.sh && bash setupvo
 ```
 ./void.sh
 ```
-Warning Void Linux buggy on vnc server. sometimes auto close. use at your own risk. stop vnc & rerun again vnc
+Warning Void sometimes auto close vnc. use at your own risk.
 ```
 xbps-install -Su
 ```
@@ -145,6 +174,65 @@ Alpine
 ```
 wget raw.githubusercontent.com/shiru-ri/playme/main/setupalpine.sh && bash setupalpine.sh
 ```
+> not all function in setup-alpine is work. so dont use setup-alpine. so only use sub setup work with less erorr
+```
+apk add alpine-conf
+```
+```
+setup-apkrepos
+```
+> enter f
+>
+> wait until done
+```
+apk upgrade && apk update
+```
+```
+apk add sudo wget curl nano
+```
+```
+setup-desktop
+```
+> enter desktop you want to install. example enter
+>
+> xfce
+```
+setup-timezone
+```
+```
+setup-sshd
+```
+> select ssh you want to use
+> 
+> optional. you can skip this
+```
+setup-dns
+```
+```
+1dot1dot1dot1.cloudflare-dns.com
+```
+> enter
+```
+1.1.1.1
+```
+> enter
+>
+> Install VNC
+```
+apk add tigervnc
+```
+```
+vncpasswd
+```
+> enter password
+```
+vncserver :1
+```
+> connect to vnc
+> localhost:1
+> logout to disconnect vnc
+
+
 > Remove
 ```
 wget raw.githubusercontent.com/shiru-ri/playme/main/removealpine.sh && bash removealpine.sh
