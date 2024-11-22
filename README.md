@@ -72,6 +72,17 @@ vncpasswd
 ```
 > enter password
 ```
+> create file
+```
+nano ~/.vnc/config
+```
+```
+session=xfce
+securitytypes=vncauth,tlsvnc
+geometry=1280x720
+localhost
+```
+ctrl + o. ctrl x
 vncserver :1
 ```
 > connect to vnc
@@ -172,7 +183,7 @@ Alpine
 ```
 wget raw.githubusercontent.com/shiru-ri/playme/main/setupalpine.sh && bash setupalpine.sh
 ```
-> not all function in setup-alpine is work. because is not fresh install like on pc. so dont use command setup-alpine. just use sub command part of setup-alpine. is work with less erorr
+> not all function in setup-alpine is work. because is not fresh install like on pc. so dont use command setup-alpine. just use sub command part of setup-alpine.
 ```
 apk add alpine-conf
 ```
@@ -209,6 +220,8 @@ setup-sshd
 >
 
 
+
+
 > optional. you can skip this
 ```
 setup-dns
@@ -236,10 +249,21 @@ vncpasswd
 ```
 > enter password
 ```
+```
+nano ~/.vnc/config
+```
+```
+session=xfce
+securitytypes=vncauth,tlsvnc
+geometry=1280x720
+localhost
+```
+> ctrl +o. ctrl x
 vncserver :1
 ```
 > connect to vnc
 > localhost:1
+> 
 > logout to disconnect vnc
 
 
