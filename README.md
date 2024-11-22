@@ -78,13 +78,11 @@ vncserver :1
 >
 > localhost:1
 >
-> in dekstop tap logout to disconnect vnc. or use
-```
-vncserver -kill :1
-```
+> in dekstop tap logout to disconnect vnc.
+
 > Remove
 >
-> if you want remove copy in termux
+> if you want to remove copy this on termux. not inside distro
 ```
 wget raw.githubusercontent.com/shiru-ri/playme/main/removemanjaro.sh && bash removemanjaro.sh
 ```
@@ -102,7 +100,7 @@ wget raw.githubusercontent.com/shiru-ri/playme/main/setupvoid.sh && bash setupvo
 ```
 ./void.sh
 ```
-Warning Void sometimes auto close vnc. use at your own risk.
+Warning Void sometimes auto close vnc when trying to setting program. use at your own risk.
 ```
 xbps-install -Su
 ```
@@ -174,7 +172,7 @@ Alpine
 ```
 wget raw.githubusercontent.com/shiru-ri/playme/main/setupalpine.sh && bash setupalpine.sh
 ```
-> not all function in setup-alpine is work. so dont use setup-alpine. so only use sub setup work with less erorr
+> not all function in setup-alpine is work. because is not fresh install like on pc. so dont use command setup-alpine. just use sub command part of setup-alpine. is work with less erorr
 ```
 apk add alpine-conf
 ```
@@ -199,11 +197,18 @@ setup-desktop
 ```
 setup-timezone
 ```
+> enter. example
+>
+> Asia
+>
+> Pontianak
 ```
 setup-sshd
 ```
 > select ssh you want to use
-> 
+>
+
+
 > optional. you can skip this
 ```
 setup-dns
@@ -216,7 +221,12 @@ setup-dns
 1.1.1.1
 ```
 > enter
->
+```
+rc-update add dbus
+```
+```
+rc-service dbus start
+```
 > Install VNC
 ```
 apk add tigervnc
