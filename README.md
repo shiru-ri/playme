@@ -27,7 +27,6 @@ termux-setup-storage
 ```
 wget raw.githubusercontent.com/shiru-ri/playme/main/setupalpine.sh && bash setupalpine.sh
 ```
-> Login Alpine
 ```
 apk add alpine-conf
 ```
@@ -44,21 +43,16 @@ apk add sudo wget curl nano
 ```
 setup-desktop
 ```
-> select dekstop
->
 > xfce
 ```
 setup-timezone
 ```
-> select timezone
->
 > Asia
 >
 > Pontianak
 ```
 setup-sshd
 ```
-> select ssh
 ```
 setup-dns
 ```
@@ -97,10 +91,10 @@ localhost
 > 
 > vncserver :1
 > 
-> connect vnc
+> open vnc viewer
 > 
 > localhost:1
->
+
 > Remove
 ```
 wget raw.githubusercontent.com/shiru-ri/playme/main/removealpine.sh && bash removealpine.sh
