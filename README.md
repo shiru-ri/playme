@@ -28,47 +28,16 @@ termux-setup-storage
 wget raw.githubusercontent.com/shiru-ri/playme/master/setupalpine.sh && bash setupalpine.sh
 ```
 ```
-apk add alpine-conf
-```
-```
-setup-apkrepos
-```
-> enter f
-```
 apk upgrade && apk update
 ```
 ```
 apk add sudo wget curl nano
 ```
 ```
-setup-desktop
-```
-> xfce
-```
-setup-timezone
-```
-> Asia
->
-> Pontianak
-```
-setup-sshd
+apk add xfce4
 ```
 ```
-setup-dns
-```
-```
-1dot1dot1dot1.cloudflare-dns.com
-```
-> enter
-```
-1.1.1.1
-```
-> enter
-```
-rc-update add dbus
-```
-```
-rc-service dbus start
+apk add xorg-server
 ```
 > Install VNC
 ```
