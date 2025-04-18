@@ -25,7 +25,7 @@ termux-setup-storage
 
 > Setup
 ```
-wget raw.githubusercontent.com/shiru-ri/playme/main/setupalpine.sh && bash setupalpine.sh
+wget raw.githubusercontent.com/shiru-ri/playme/master/setupalpine.sh && bash setupalpine.sh
 ```
 ```
 apk add alpine-conf
@@ -97,7 +97,7 @@ localhost
 
 > Remove
 ```
-wget raw.githubusercontent.com/shiru-ri/playme/main/removealpine.sh && bash removealpine.sh
+wget raw.githubusercontent.com/shiru-ri/playme/master/removealpine.sh && bash removealpine.sh
 ```
 # Reference
 [Here](https://github.com/Neo-Oli/termux-ubuntu)

@@ -3,7 +3,7 @@
 tarball="alpine.tar.gz"
 
 echo "Download"
-wget "https://dl-cdn.alpinelinux.org/alpine/v/releases/aarch64/alpine-minirootfs-*-aarch64.tar.gz" -O $tarball
+wget "https://dl-cdn.alpinelinux.org/alpine/v3.21/releases/aarch64/alpine-minirootfs-3.21.3-aarch64.tar.gz" -O $tarball
 
 echo "Setup"
 mkdir -p alpine
